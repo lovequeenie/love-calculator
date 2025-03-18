@@ -1,23 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
 body {
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
     background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
-    height: 100%; /* Višina bo enaka višini vsebine */
-    min-height: 100vh; /* Prepreči, da bi bila stran manjša od ekrana */
-    font-family: "Times New Roman", serif;
-    text-align: center;
-    color: blue;
+    display: block;
 }
 
-html, body {
-    height: auto; /* Naj se višina prilagaja */
+#page-content {
+    height: 10800px; /* Enaka višina kot slika */
 }
 
-#content {
-    min-height: 100vh; /* Poskrbi, da je vsebina dovolj visoka za scroll */
-    height: auto;
-}
 
 
 
