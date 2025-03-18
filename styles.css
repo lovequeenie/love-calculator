@@ -3,18 +3,19 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Omogoči skrolanje po celotni strani */
+    overflow: auto; /* Omogoči skrolanje na celotni strani */
 }
 
 body {
     background-image: url('background.jpg'); /* Tvoje ozadje */
-    background-size: auto 100%;  /* Slika se prilagodi višini zaslona, širina ostane enaka */
+    background-size: 100% auto;  /* Slika se bo prilagodila širini zaslona, višina bo ohranjena */
     background-position: top center; /* Slika je postavljena na vrh zaslona */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
     min-height: 100vh; /* Stran bo imela minimalno višino zaslona */
+    height: auto; /* Stran bo prilagodila višino glede na vsebino */
 }
 
 .container {
