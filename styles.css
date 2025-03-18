@@ -6,16 +6,16 @@ html, body {
 }
 
 body {
-    background-image: url('background.jpg'); /* Dodaj svojo sliko */
-    background-size: contain;  /* Ohranimo razmerje slike, brez rezanja */
-    background-position: top center; /* Slika je na sredini */
+    background-image: url('background.jpg'); /* Tvoje ozadje */
+    background-size: cover;  /* Slika se bo raztegnila, da pokrije celoten zaslon */
+    background-position: top center; /* Slika bo centrirana na vrhu */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    min-height: 100%;  /* Omogočimo scrollanje, če slika presega višino zaslona */
-    height: 100vh;  /* Določi višino ekrana */
-    overflow-y: scroll; /* Omogoči scrollanje */
+    min-height: 100vh;  /* Pusti, da slika pokrije celoten zaslon */
+    height: auto; /* Prilagodi višino vsebine */
+    overflow-y: auto; /* Omogoči vertikalno scrollanje, če je potrebno */
 }
 
 .container {
@@ -38,6 +38,7 @@ input {
     padding: 10px;
     width: 80%;
     font-size: 16px;
+    font-family: "Times New Roman", serif;
 }
 
 button {
