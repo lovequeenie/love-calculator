@@ -7,15 +7,15 @@ html, body {
 
 body {
     background-image: url('background.jpg'); /* Tvoje ozadje */
-    background-size: 100% auto;  /* Slika se bo prilagodila širini ekrana in ohranila razmerje */
+    background-size: 100% auto;  /* Slika se prilagodi širini zaslona, ohranja razmerje */
     background-position: top center; /* Slika je na vrhu in centrirana horizontalno */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    min-height: 100%;  /* Stran bo vsaj visoka kot zaslon */
-    height: auto; /* Omogoči višino, ki se prilagaja vsebini */
-    overflow-y: auto; /* Omogoči vertikalno skrolanje, če je potrebno */
+    height: auto; /* Omogoči, da višina strani sledi vsebini */
+    min-height: 100vh; /* Zagotovi, da stran vsaj pokrije zaslon */
+    overflow-y: scroll; /* Omogoči vertikalno skrolanje */
 }
 
 .container {
@@ -60,4 +60,3 @@ button:hover {
     font-size: 20px;
     font-weight: bold;
 }
-
