@@ -53,14 +53,14 @@ button:hover {
 }
 .bottom-image {
     display: block;
-    width: 100%;  /* Razširi sliko čez celotno širino */
-    max-width: 100%;
-    height: auto;  /* Ohranja razmerje slike */
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;  /* Prilagodi širino slike */
+    height: auto;  /* Ohrani razmerje slike */
+    position: fixed;  /* Fiksna pozicija */
+    bottom: 0;  /* Postavi na dno strani */
+    left: 0;  /* Prilagodi na levo stran */
+    z-index: -1;  /* Poskrbi, da slika ni nad vsemi drugimi elementi */
 }
+
 
 
 
