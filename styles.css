@@ -3,15 +3,20 @@ body {
     background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh; /* Najmanj višina ekrana */
-    height: auto; /* Prilagodi višino vsebini */
+    height: 100%; /* Višina bo enaka višini vsebine */
+    min-height: 100vh; /* Prepreči, da bi bila stran manjša od ekrana */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
+}
+
+html, body {
+    height: auto; /* Naj se višina prilagaja */
+}
+
+#content {
+    min-height: 100vh; /* Poskrbi, da je vsebina dovolj visoka za scroll */
+    height: auto;
 }
 
 
