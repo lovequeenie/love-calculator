@@ -1,24 +1,14 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Nastavi višino na 100% zaslona */
-    overflow: hidden; /* Prepreči skrolanje izven slike */
-}
-
 body {
-    background-image: url('background.jpg'); /* Tvoja slika */
-    background-size: contain;  /* Ohranimo razmerje slike */
-    background-position: top center; /* Slika se začne na vrhu */
+    background-image: url('background.jpg'); /* Dodaj svojo sliko */
+    background-size: contain;  /* Slika bo ohranila razmerje, vendar se bo popolnoma prilegala */
+    background-position: top center; /* Slika se začne na vrhu in je centrirana */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
-    min-height: 100vh; /* Nastavi minimalno višino na 100% zaslona */
+    max-height: 10800px; /* Minimalna višina omogoča skrolanje */
     overflow-y: auto; /* Omogoči vertikalno skrolanje */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
     height: 10800px; /* Nastavimo višino na točno višino slike */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .container {
