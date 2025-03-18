@@ -53,12 +53,12 @@ button:hover {
 }
 .bottom-image {
     display: block;
-    width: 100%;  /* Prilagodi širino slike */
-    height: auto;  /* Ohrani razmerje slike */
-    position: fixed;  /* Fiksna pozicija */
-    bottom: 0;  /* Postavi na dno strani */
-    left: 0;  /* Prilagodi na levo stran */
-    z-index: -1;  /* Poskrbi, da slika ni nad vsemi drugimi elementi */
+    width: 100%;  /* Razširi sliko čez celotno širino */
+    height: auto;  /* Ohranja razmerje slike */
+    position: absolute;  /* Slika se premika na absolutno pozicijo */
+    bottom: 0;  /* Postavi jo na dno strani */
+    left: 0;  /* Poskrbi, da je slika poravnana z levo stranjo */
+    z-index: -1;  /* Poskrbi, da slika ne prekriva vsebine na strani */
 }
 
 
