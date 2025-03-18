@@ -6,59 +6,17 @@ html, body {
 }
 
 body {
-    background-image: url('background.jpg'); /* Tvoje ozadje */
-    background-size: contain;  /* Ohranimo razmerje slike, brez deformacij */
+    background-image: url('background.jpg'); /* Dodaj svojo sliko */
+    background-size: contain;  /* Ohranimo razmerje slike, brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    min-height: 100%;  /* Omogočimo scrollanje */
+    min-height: 100%;  /* Omogočimo scrollanje, če slika presega višino zaslona */
+    height: 100vh;  /* Določi višino ekrana */
+    overflow-y: scroll; /* Omogoči scrollanje */
 }
-
-.container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-h1 {
-    font-size: 28px;
-}
-
-input {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 80%;
-    font-size: 16px;
-}
-
-button {
-    background-color: white;
-    color: red;
-    border: 2px solid red;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    font-family: "Times New Roman", serif;
-}
-
-button:hover {
-    background-color: red;
-    color: white;
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
 
 .container {
     position: absolute;
