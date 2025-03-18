@@ -6,18 +6,19 @@ html, body {
 }
 
 body {
-    background-image: url('background.jpg'); /* Tvoje ozadje */
-    background-size: 100% auto;  /* Slika se prilagodi širini zaslona, ohranja razmerje */
-    background-position: top center; /* Slika je na vrhu in centrirana horizontalno */
+    background-image: url('background.jpg'); /* Ozadje slike */
+    background-size: 100% auto;  /* Slika ohrani razmerje, širina se prilagodi */
+    background-position: top center; /* Slika je centrirana na vrhu */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    height: auto; /* Omogoči, da višina strani sledi vsebini */
-    min-height: 100vh; /* Zagotovi, da stran vsaj pokrije zaslon */
-    overflow-y: scroll; /* Omogoči vertikalno skrolanje */
+    min-height: 100%; /* Stran se bo prilagodila višini zaslona */
+    height: auto; /* Omogoči prilagajanje višine vsebine */
+    overflow-y: auto; /* Omogoči skrolanje vertikalno */
 }
 
+/* Kontejner za vnosne forme */
 .container {
     position: absolute;
     top: 50%;
@@ -28,10 +29,12 @@ body {
     border-radius: 10px;
 }
 
+/* Naslov */
 h1 {
     font-size: 28px;
 }
 
+/* Polja za vnos */
 input {
     display: block;
     margin: 10px auto;
@@ -40,6 +43,7 @@ input {
     font-size: 16px;
 }
 
+/* Gumb za izračun */
 button {
     background-color: white;
     color: red;
@@ -55,6 +59,7 @@ button:hover {
     color: white;
 }
 
+/* Rezultat */
 #result {
     margin-top: 20px;
     font-size: 20px;
