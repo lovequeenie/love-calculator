@@ -54,9 +54,10 @@ button:hover {
 .bottom-image {
     display: block;
     margin: 0 auto;
-    width: 100%;  /* Slika se raztegne čez celotno širino */
+    width: 100%;  /* Raztegne se čez širino */
     max-width: 100%;
     height: auto;  /* Ohranja razmerje slike */
     position: relative;
 }
+
 
