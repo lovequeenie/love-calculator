@@ -1,8 +1,11 @@
 body {
-    background-image: url('background.jpg'); /* Zamenjaj z URL-jem prave slike */
+    background-image: url('background.jpg'); /* Zamenjaj z imenom tvoje slike */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    color: blue;
 }
 
 .container {
