@@ -53,7 +53,7 @@ button:hover {
 }
 .bottom-image {
     display: block;
-    width: 100%;  /* Prilagodi širino */
+    width: 100%;  /* Razširi sliko čez celotno širino */
     max-width: 100%;
     height: auto;  /* Ohranja razmerje slike */
     position: absolute;
@@ -61,6 +61,7 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 
 
