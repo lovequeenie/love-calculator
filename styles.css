@@ -6,19 +6,19 @@ html, body {
 }
 
 body {
-    background-image: url('background.jpg'); /* Ozadje slike */
-    background-size: 100% auto;  /* Slika ohrani razmerje, širina se prilagodi */
-    background-position: top center; /* Slika je centrirana na vrhu */
+    background-image: url('background.jpg'); /* Dodaj svojo sliko */
+    background-size: auto 100%;  /* Slika bo prilagojena višini zaslona, širina bo ohranjena */
+    background-position: top center; /* Slika je poravnana na vrhu zaslona */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    min-height: 100%; /* Stran se bo prilagodila višini zaslona */
-    height: auto; /* Omogoči prilagajanje višine vsebine */
-    overflow-y: auto; /* Omogoči skrolanje vertikalno */
+    min-height: 100%; /* Zagotovi minimalno višino za zaslon */
+    height: auto; /* Višina bo prilagojena vsebini */
+    overflow-y: auto; /* Omogoči skrolanje, če je višina strani večja od zaslona */
 }
 
-/* Kontejner za vnosne forme */
+/* Kontejner za vnos */
 .container {
     position: absolute;
     top: 50%;
