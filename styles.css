@@ -3,8 +3,8 @@ body {
     background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
-    min-height: 10800px; /* Minimalna višina, omogoča scrollanje */
-    overflow-y: scroll; /* Omogoči vertikalno scrollanje */
+    height: 100vh; /* Višina strani bo enaka višini slike */
+    overflow: hidden; /* Prepreči dodatno scrollanje */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
