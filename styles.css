@@ -1,19 +1,8 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
 body {
-    background-image: url('background.jpg'); /* Tvoja slika */
-    background-size: auto;  /* Ohranimo dejansko velikost slike */
-    background-position: top center; /* Slika se začne na vrhu */
-    background-repeat: no-repeat; /* Prepreči ponavljanje slike */
-    font-family: "Times New Roman", serif;
-    text-align: center;
-    color: blue;
-    height: 10800px; /* Nastavimo višino telesa na točno višino slike */
-    overflow-y: scroll; /* Omogoči skrolanje po vsebini */
+    background-image: url('https://example.com/moja-slika.jpg'); /* Zamenjaj z URL-jem prave slike */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .container {
@@ -21,7 +10,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
 }
