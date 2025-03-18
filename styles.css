@@ -3,21 +3,20 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    overflow: auto; /* Omogoči skrolanje po celotni strani */
 }
 
 body {
-    background-image: url('background.jpg'); /* Slika ozadja */
-    background-size: contain;  /* Slika se bo prilagodila celotnemu zaslonu */
-    background-position: top center; /* Slika bo vedno centrirana na vrhu */
+    background-image: url('background.jpg'); /* Tvoje ozadje */
+    background-size: auto 100%;  /* Slika se prilagodi višini zaslona, širina ostane enaka */
+    background-position: top center; /* Slika je postavljena na vrh zaslona */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    height: 100vh; /* Nastavi višino na višino zaslona */
-    overflow-y: auto; /* Omogoči skrolanje vertikalno */
+    min-height: 100vh; /* Stran bo imela minimalno višino zaslona */
 }
 
-/* Kontejner za vnos */
 .container {
     position: absolute;
     top: 50%;
@@ -28,12 +27,10 @@ body {
     border-radius: 10px;
 }
 
-/* Naslov */
 h1 {
     font-size: 28px;
 }
 
-/* Polja za vnos */
 input {
     display: block;
     margin: 10px auto;
@@ -42,7 +39,6 @@ input {
     font-size: 16px;
 }
 
-/* Gumb za izračun */
 button {
     background-color: white;
     color: red;
@@ -58,7 +54,6 @@ button:hover {
     color: white;
 }
 
-/* Rezultat */
 #result {
     margin-top: 20px;
     font-size: 20px;
