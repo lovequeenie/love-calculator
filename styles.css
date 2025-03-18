@@ -3,12 +3,17 @@ body {
     background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
-    height: 10800vh; /* Višina strani bo enaka višini slike */
-    overflow: hidden; /* Prepreči dodatno scrollanje */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; /* Najmanj višina ekrana */
+    height: auto; /* Prilagodi višino vsebini */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
 }
+
 
 
 .container {
