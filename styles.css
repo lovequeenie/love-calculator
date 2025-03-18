@@ -1,17 +1,14 @@
 body {
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
-    background-size: contain;  /* Slika se bo prilagodila širini in ohranila razmerje */
-    background-position: top center; /* Slika začne na vrhu in je centrirana */
+    background-size: contain;  /* Slika bo ohranila razmerje, vendar se bo popolnoma prilegala */
+    background-position: top center; /* Slika se začne na vrhu in je centrirana */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     min-height: 10800px; /* Minimalna višina omogoča skrolanje */
     overflow-y: auto; /* Omogoči vertikalno skrolanje */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    height: 100%; /* Določi višino na 100%, da se prilagodi vsebini */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 10800px; /* Nastavimo višino na točno višino slike */
 }
 
 .container {
