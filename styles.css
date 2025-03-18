@@ -1,0 +1,51 @@
+body {
+    background-image: url('background.jpg'); /* Dodaj svojo sliko */
+    background-size: cover;
+    background-position: center;
+    font-family: "Times New Roman", serif;
+    text-align: center;
+    color: blue;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 16px;
+}
+
+button {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Times New Roman", serif;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
