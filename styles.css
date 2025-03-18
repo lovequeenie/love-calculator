@@ -52,10 +52,11 @@ button:hover {
     font-weight: bold;
 }
 .bottom-image {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;  /* Ohranja originalno širino slike */
-    max-width: 100%; /* Prepreči preveliko širino */
+    display: block;
+    margin: 0 auto;
+    width: 100%;  /* Slika se raztegne čez celotno širino */
+    max-width: 100%;
+    height: auto;  /* Ohranja razmerje slike */
+    position: relative;
 }
+
