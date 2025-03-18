@@ -3,11 +3,13 @@ body {
     background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
-    height: 10800px; /* Višina naj bo enaka tvoji sliki */
+    min-height: 10800px; /* Minimalna višina, omogoča scrollanje */
+    overflow-y: scroll; /* Omogoči vertikalno scrollanje */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
 }
+
 
 .container {
     position: absolute;
