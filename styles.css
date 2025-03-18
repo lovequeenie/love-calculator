@@ -1,22 +1,13 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Prepreči skrolanje izven okvira */
-}
-
 body {
-    background-image: url('background.jpg'); /* Tvoje ozadje */
-    background-size: contain;  /* Slika se bo prilagodila širini in ohranila razmerje */
-    background-position: top center; /* Slika začne na vrhu in je centrirana */
-    background-repeat: no-repeat; /* Prepreči ponavljanje slike */
+    background-image: url('background.jpg'); /* Dodaj svojo sliko */
+    background-size: contain;  /* Prikaže celo sliko brez rezanja */
+    background-position: top center; /* Slika je na sredini */
+    background-repeat: no-repeat; /* Prepreči ponavljanje */
+    min-height: 10800px; /* Minimalna višina, omogoča scrollanje */
+    overflow-y: scroll; /* Omogoči vertikalno scrollanje */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    min-height: 100vh; /* Višina zaslona je minimalna višina telesa */
-    height: auto; /* Višina dokumenta se bo prilagodila vsebini */
-    overflow-y: auto; /* Omogoči vertikalno skrolanje */
 }
 
 .container {
