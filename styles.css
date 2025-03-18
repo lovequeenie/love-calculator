@@ -7,15 +7,15 @@ html, body {
 
 body {
     background-image: url('background.jpg'); /* Tvoje ozadje */
-    background-size: cover;  /* Slika se bo raztegnila, da pokrije celoten zaslon */
-    background-position: top center; /* Slika bo centrirana na vrhu */
+    background-size: 100% auto;  /* Slika se bo prilagodila širini ekrana in ohranila razmerje */
+    background-position: top center; /* Slika je na vrhu in centrirana horizontalno */
     background-repeat: no-repeat; /* Prepreči ponavljanje slike */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    min-height: 100vh;  /* Pusti, da slika pokrije celoten zaslon */
-    height: auto; /* Prilagodi višino vsebine */
-    overflow-y: auto; /* Omogoči vertikalno scrollanje, če je potrebno */
+    min-height: 100%;  /* Stran bo vsaj visoka kot zaslon */
+    height: auto; /* Omogoči višino, ki se prilagaja vsebini */
+    overflow-y: auto; /* Omogoči vertikalno skrolanje, če je potrebno */
 }
 
 .container {
@@ -38,7 +38,6 @@ input {
     padding: 10px;
     width: 80%;
     font-size: 16px;
-    font-family: "Times New Roman", serif;
 }
 
 button {
@@ -61,3 +60,4 @@ button:hover {
     font-size: 20px;
     font-weight: bold;
 }
+
