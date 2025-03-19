@@ -1,9 +1,10 @@
 body {
+    height: 19400px;
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
     background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
-    max-height: 19400px; /* Minimalna višina, omogoča scrollanje */
+    min-height: 19400px; /* Minimalna višina, omogoča scrollanje */
     overflow-y: scroll; /* Omogoči vertikalno scrollanje */
     font-family: "Times New Roman", serif;
     text-align: center;
