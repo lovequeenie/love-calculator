@@ -4,7 +4,8 @@ body {
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
-    width: 3840px;
+    width: 3840px; 
+    overflow-x: hidden;
 }
 
 .main-background {
