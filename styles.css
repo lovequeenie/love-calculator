@@ -6,8 +6,9 @@ body {
         text-align: center;
         color: blue;
         width: 100vw; /* Širina enaka širini zaslona */
-        max-width: 3840px; /* Največja širina 3840px */
-        overflow-x: hidden; /* Onemogoči horizontalno skrolanje */
+        min-width: 3840px; /* Največja širina 3840px */
+        overflow-x: hidden;
+        overflow-y: scroll; /* Onemogoči horizontalno skrolanje */
         margin: 0 auto; /* Centriraj vsebino */
     }
     
