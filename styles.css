@@ -1,11 +1,25 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Times New Roman", serif;
-    text-align: center;
-    color: blue;
-    width: 3840px; 
-    overflow-x: hidden;
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", serif;
+        text-align: center;
+        color: blue;
+        width: 100vw; /* Širina enaka širini zaslona */
+        max-width: 3840px; /* Največja širina 3840px */
+        overflow-x: hidden; /* Onemogoči horizontalno skrolanje */
+        margin: 0 auto; /* Centriraj vsebino */
+    }
+    
+    .main-background {
+        background-image: url('background.jpg');
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-width: 3840px; /* Širina ozadja */
+        height: 10800px; /* Višina ozadja */
+    }
 }
 
 .main-background {
