@@ -1,11 +1,12 @@
 body {
     height: 19440px;
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
-    background-size: contain;  /* Prikaže celo sliko brez rezanja */
-    background-position: top center; /* Slika je na sredini */
-    background-repeat: no-repeat; /* Prepreči ponavljanje */
-    max-height: 19440px; /* Minimalna višina, omogoča scrollanje */
-    overflow-y: scroll; /* Omogoči vertikalno scrollanje */
+    background-size: cover; /* Poskrbi, da ozadje pokrije celoten zaslon */
+    background-attachment: fixed;
+    height: 100%; 
+    margin: 0;
+    overflow-y: auto; /* Omogoči skrolanje po osi Y */
+    max-height: 19440px;
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
@@ -13,7 +14,7 @@ body {
 
 .container {
     position: absolute;
-    top: 2088px;
+    top: 3000px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
