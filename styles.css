@@ -1,10 +1,10 @@
 body {
-    height: 19400px;
+    height: 2048px;
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
     background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
-    min-height: 19400px; /* Minimalna višina, omogoča scrollanje */
+    min-height: 2048px; /* Minimalna višina, omogoča scrollanje */
     overflow-y: scroll; /* Omogoči vertikalno scrollanje */
     font-family: "Times New Roman", serif;
     text-align: center;
@@ -55,7 +55,7 @@ button:hover {
 }
 .love-letter-container {
     position: absolute;
-    top: 19400px; /* Postavi na dno strani */
+    top: 2058px; /* Postavi na dno strani */
     width: 100%;
     text-align: center;
 }
