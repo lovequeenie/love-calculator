@@ -1,5 +1,6 @@
 body {
     height: 2048px;
+    width: 404px;
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
     background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
