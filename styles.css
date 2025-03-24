@@ -1,11 +1,11 @@
 body {
-    height: 8200px;
+    height: 8225px;
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
     background-size: cover; /* Poskrbi, da ozadje pokrije celoten zaslon */
     height: 100%; 
     margin: 0;
     overflow-y: auto; /* Omogoči skrolanje po osi Y */
-    max-height: 8200px;
+    max-height: 8225px;
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
