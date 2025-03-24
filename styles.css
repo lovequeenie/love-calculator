@@ -1,11 +1,11 @@
 body {
-    height: 9000px;
+    height: 8700px;
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
     background-size: cover; /* Poskrbi, da ozadje pokrije celoten zaslon */
     height: 100%; 
     margin: 0;
     overflow-y: auto; /* Omogoči skrolanje po osi Y */
-    max-height: 9000px;
+    max-height: 8700px;
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
@@ -13,7 +13,7 @@ body {
 
 .container {
     position: absolute;
-    top: 2800px;
+    top: 2400px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
