@@ -1,7 +1,7 @@
 body {
     height: 19440px;
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
-    background-size: cover;  /* Prikaže celo sliko brez rezanja */
+    background-size: contain;  /* Prikaže celo sliko brez rezanja */
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
     min-height: 19440px; /* Minimalna višina, omogoča scrollanje */
