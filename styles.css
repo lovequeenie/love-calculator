@@ -55,7 +55,7 @@ button:hover {
 }
 .love-letter-container {
     position: absolute;
-    top: 3500px; /* Postavi na dno strani */
+    top: 8225px; /* Postavi na dno strani */
     width: 100%;
     text-align: center;
 }
@@ -77,13 +77,13 @@ button:hover {
 }
 
 #loveLetter {
-    width: 50%;
+    width: 30%;
     height: auto; /* Višina se prilagaja tekstu */
     min-height: 120px; /* Minimalna višina */
     font-size: 16px;
     font-family: "Times New Roman", serif;
     padding: 10px;
-    border: 1px solid rgb(22, 119, 54);
+    border: 1px solid rgb(19, 217, 42);
     display: block;
     margin: auto;
     resize: none; /* Onemogoči ročno spreminjanje velikosti */
