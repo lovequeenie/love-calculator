@@ -5,7 +5,7 @@ body {
     background-position: top center; /* Slika je na sredini */
     background-repeat: no-repeat; /* Prepreči ponavljanje */
     min-height: 19400px; /* Minimalna višina, omogoča scrollanje */
-    overflow-y: 19400px scroll; /* Omogoči vertikalno scrollanje */
+    overflow-y: scroll; /* Omogoči vertikalno scrollanje */
     font-family: "Times New Roman", serif;
     text-align: center;
     color: blue;
@@ -52,4 +52,39 @@ button:hover {
     margin-top: 20px;
     font-size: 20px;
     font-weight: bold;
+}
+.love-letter-container {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#generateBtn, #copyBtn {
+    background-color: white;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Times New Roman", serif;
+    margin: 10px;
+}
+
+#generateBtn:hover, #copyBtn:hover {
+    background-color: red;
+    color: white;
+}
+
+#loveLetter {
+    width: 80%;
+    height: 100px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+    padding: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
 }
