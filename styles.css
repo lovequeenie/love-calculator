@@ -56,7 +56,7 @@ button:hover {
 }
 .love-letter-container {
     position: absolute;
-    top: 8225px; /* Postavi na dno strani */
+    top: 8210px; /* Postavi na dno strani */
     width: 100%;
     text-align: center;
 }
