@@ -1,7 +1,8 @@
 body {
     height: 8225px;
     background-image: url('background.jpg'); /* Dodaj svojo sliko */
-    background-size: cover; /* Poskrbi, da ozadje pokrije celoten zaslon */
+    background-size: cover;
+    background-repeat: no-repeat; 
     height: 100%; 
     margin: 0;
     overflow-y: auto; /* Omogoči skrolanje po osi Y */
