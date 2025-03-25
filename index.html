@@ -49,6 +49,13 @@
     <button class="answer-button" id="seekAnswerBtn">I SEEK THE ANSWER</button>
     <div class="answer" id="finalAnswer"></div>
 </div>
+<script>
+    document.getElementById("seekAnswerBtn").addEventListener("click", function() {
+        document.getElementById("finalAnswer").innerText = "YES";
+        document.getElementById("finalAnswer").style.visibility = "visible"; // Prikaže odgovor
+    });
+</script>
+
 
 </body>
 
