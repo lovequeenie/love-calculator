@@ -13,7 +13,7 @@ body {
 
 .container {
     position: absolute;
-    margin-top: 2300px;
+    top: 2300px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
@@ -90,25 +90,4 @@ button:hover {
     overflow: hidden; /* Prepreči notranji scrollbar */
     text-align: center;
 }
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    font-family: "Times New Roman", serif;
-    text-align: center;
-    margin-top: 5000px;
-}
 
-.button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.answer {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    margin-top: 5000px;
-}
