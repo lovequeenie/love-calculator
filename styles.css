@@ -95,7 +95,7 @@ button:hover {
     position: relative;
     width: 100%;
     max-width: 500px; /* Širina okenca */
-    margin: 4500px; /* Postavi nekje proti koncu strani, lahko prilagodiš */
+    top-margin: 4500px; /* Postavi nekje proti koncu strani, lahko prilagodiš */
     text-align: center;
     font-family: "Times New Roman", serif;
     padding: 20px;
