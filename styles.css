@@ -62,7 +62,7 @@ button:hover {
 }
 
 #generateBtn, #copyBtn {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.572);
     color: red;
     border: 2px solid red;
     padding: 10px 20px;
@@ -95,11 +95,11 @@ button:hover {
     position: relative;
     width: 100%;
     max-width: 500px; /* Širina okenca */
-    margin: 200px auto; /* Postavi nekje proti koncu strani, lahko prilagodiš */
+    margin: 4500px; /* Postavi nekje proti koncu strani, lahko prilagodiš */
     text-align: center;
     font-family: "Times New Roman", serif;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Rahlo prosojno ozadje */
+    background: rgba(255, 255, 255, 0.345); /* Rahlo prosojno ozadje */
     border: 2px solid black;
     border-radius: 10px;
 }
