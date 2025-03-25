@@ -8,4 +8,9 @@ document.getElementById("calculateBtn").addEventListener("click", function() {
         document.getElementById("result").innerText = `${name1} ❤️ ${name2}: 100% Love!`;
     }
 });
+document.getElementById("seekAnswerBtn").addEventListener("click", function() {
+    let answerDiv = document.getElementById("finalAnswer");
+    answerDiv.innerText = "YES";
+    answerDiv.style.visibility = "visible"; // Prikaže odgovor
+});
 

@@ -91,4 +91,45 @@ button:hover {
     overflow: hidden; 
     text-align: center;
 }
+.question-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Širina okenca */
+    margin: 200px auto; /* Postavi nekje proti koncu strani, lahko prilagodiš */
+    text-align: center;
+    font-family: "Times New Roman", serif;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Rahlo prosojno ozadje */
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.question {
+    font-size: 24px;
+}
+
+.italic {
+    font-style: italic; /* Ležeče črke */
+}
+
+.answer-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Times New Roman", serif;
+    cursor: pointer;
+    background: rgb(10, 110, 16);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.answer {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(30, 30, 249);
+    margin-top: 20px;
+    visibility: hidden; /* Skrit dokler ni kliknjen gumb */
+}
+
 
