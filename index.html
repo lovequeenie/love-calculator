@@ -15,6 +15,16 @@
         <p id="result"></p>
     </div>
     <script src="script.js"></script>
+    
+    <p class="question">Will we get our garden?</p>
+<button class="answer-button" onclick="revealAnswer(this)">Click to find out!</button>
+
+<script>
+    function revealAnswer(button) {
+        button.textContent = "YES";
+    }
+</script>
+
 
 <div class="love-letter-container">
     <button id="generateBtn">Generate</button>
