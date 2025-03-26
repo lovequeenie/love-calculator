@@ -97,6 +97,9 @@ button:hover {
     color: blue;
     font-size: 24px;
     margin-top: 5000px;
+    background-color: rgb(254, 88, 241); /* Belo ozadje za highlight */
+    padding: 5px 10px; /* Dodaten prostor okoli besedila */
+    display: inline-block;
 }
 .answer-button {
     font-family: "Times New Roman", serif;
