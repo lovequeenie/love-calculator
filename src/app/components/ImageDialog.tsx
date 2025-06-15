@@ -41,6 +41,7 @@ export function ImageDialog({
 							src={`/imgs/${imageUrl}`}
 							height={100}
 							width={100}
+							loading="lazy"
 							alt="Information image"
 							quality={100}
 							className="object-cover min-h-full min-w-full"
