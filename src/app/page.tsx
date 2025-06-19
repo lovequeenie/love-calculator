@@ -66,7 +66,7 @@ export default function Home() {
 						<button
 							className=" h-[60%] md:text-xl md:p-1  cursor-pointer rounded-lg bg-contain bg-no-repeat bg-center aspect-[1/1] self-center "
 							style={{
-								backgroundImage: "url(imgs/calculateButton.png)",
+								backgroundImage: "url(imgs/calculatebutton.png)",
 								height: "100px",
 							}}
 							onClick={ShowResult}
@@ -116,7 +116,7 @@ export default function Home() {
 					onClick={() => setIsClickToFindOutClicked(!isClicktoFindOutClicked)}
 					className="cursor-grab  text-xl  lg:text-4xl ">
 					<Image
-						src={`/imgs/${isClicktoFindOutClicked ? "yesButton.png" : "clickToFindOutButton.png"}`}
+						src={`/imgs/${isClicktoFindOutClicked ? "yesbutton.png" : "clicktofindoutbutton.png"}`}
 						alt="Click Button"
 						className="w-full h-full object-contain"
 						draggable={false}
