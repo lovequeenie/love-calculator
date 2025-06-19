@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ImageDialog } from "./components/ImageDialog";
+import Image from "next/image";
 type DialogId =
 	| "home"
 	| "raddich"
@@ -10,6 +11,7 @@ type DialogId =
 	| "lettuce"
 	| "pepper"
 	| "garlicAndOnions"
+	| "zine"
 	| null;
 export default function Home() {
 	const [name1, setName1] = useState("");
@@ -35,19 +37,19 @@ export default function Home() {
 	};
 	return (
 		<div
-			className=" relative w-screen h-[541.5vw]  
-             bg-[url(/imgs/background1New.webp)] bg-no-repeat  
-             bg-[length:100%_auto] overflow-x-hidden z-0">
-			<div className=" absolute md:left-[36.5%]  md:top-[21.5%] xl:left-1/3 xl:top-[21.5%] sm:w-3/12 xl:w-1/3  z-10 flex flex-col  space-y-4 items-center xl:m-2  overflow-y-hidden">
-				<h1 className="text-xl  md:text-3xl justify-self-center whitespace-nowrap overflow-y-hidden">
-					Love Calculator
-				</h1>
-				<div className=" flex flex-col space-y-4 ">
+			className=" relative w-screen h-[403.5vw]  
+             bg-[url(/imgs/bgNewest.webp)] bg-no-repeat  
+             bg-[length:100%_auto] overflow-x-hidden z-0 love-parade-text">
+			<div className=" absolute max-h-[7.5%] md:left-[36.7%]  md:top-[21.5%] xl:left-1/3 xl:top-[21.5%] sm:w-3/12 xl:w-1/3   z-10 flex flex-col  space-y-4 items-center xl:m-2  overflow-hidden">
+				<div className=" grid grid-rows-9 space-y-4 overflow-hidden">
+					<h1 className="text-xl  md:text-3xl justify-self-center whitespace-nowrap  row-span-1 text-[#6658fe]">
+						Love Calculator
+					</h1>
 					<input
 						type="text"
 						id="name1"
 						placeholder="Name 1"
-						className="text-lg xl:text-3xl p-4 border-2 rounded-lg"
+						className="text-lg w-full xl:text-3xl p-4 max-h-2/4 border-2 rounded-lg row-span-1.5 text-[#6658fe]"
 						value={name1}
 						onChange={(e) => setName1((e.target as HTMLInputElement).value)}
 					/>
@@ -55,29 +57,37 @@ export default function Home() {
 						type="text"
 						id="name2"
 						placeholder="Name 2"
-						className="text-lg xl:text-3xl w-full max-h-1/4 p-4 border-2 rounded-lg"
+						className="text-lg xl:text-3xl w-full max-h-2/4 p-4 border-2 rounded-lg row-span-1.5 text-[#6658fe]"
 						value={name2}
 						onChange={(e) => setName2((e.target as HTMLInputElement).value)}
 					/>
-					<button
-						className="md:text-xl md:p-2 my-5 hover:bg-red-600 cursor-pointer rounded-lg bg-[#B80F0A] "
-						onClick={ShowResult}>
-						CALCULATE
-					</button>
-				</div>
-				{showResult && (
-					<div className="flex justify-center my-1 xl:my-4">
-						<p className="flex w-full justify-center sm:text-xl md:text-3xl xl:text-5xl mx-auto ">
-							{`${name1}`}{" "}
-							<img
-								src="/imgs/heart.gif"
-								alt="love-gif"
-								className="h-2/12 lg:h-20"
-							/>
-							{` ${name2} 100% love!`}
-						</p>
+					<div className="row-span-4 flex flex-col h-full text-[#6658fe]">
+						{" "}
+						<button
+							className=" h-[60%] md:text-xl md:p-1  cursor-pointer rounded-lg bg-contain bg-no-repeat bg-center aspect-[1/1] self-center "
+							style={{
+								backgroundImage: "url(imgs/calculateButton.png)",
+								height: "100px",
+							}}
+							onClick={ShowResult}
+						/>
+						<div className="flex justify-center xl:my-4 h-[40%]">
+							<p className="flex w-full justify-center sm:text-xl md:text-2xl xl:text-5xl ">
+								{showResult && (
+									<>
+										<span className="break-all">{name1}</span>&nbsp;
+										<img
+											src="/imgs/heart.gif"
+											alt="love-gif"
+											className="h-2/12 lg:h-20"
+										/>
+										&nbsp;<span className="break-all">{name2} 100% love!</span>
+									</>
+								)}
+							</p>
+						</div>
 					</div>
-				)}
+				</div>
 			</div>
 			<div className="absolute right-[4%] w-2/12 top-[28.5%] z-10 flex flex-col  space-y-4 items-center justify-center m-10 ">
 				<ImageDialog
@@ -88,6 +98,15 @@ export default function Home() {
 					key={1}
 				/>
 			</div>
+			<div className="absolute right-[25%] w-2/12 max-h-[5%] top-[30.5%] z-10 flex flex-col  space-y-4 items-center justify-center m-10 ">
+				<ImageDialog
+					imageUrl="zin.jpg"
+					title="Zine"
+					isOpen={openDialog === "zine"}
+					onOpenChange={(open) => setOpenDialog(open ? "zine" : null)}
+					key={1}
+				/>
+			</div>
 			<div className="absolute left-1/3 md:top-[55%] z-10 flex flex-row  space-y-4 items-center justify-center m-10 space-x-4">
 				<p className="  w-1/2 text-xl lg:text-4xl px-10 py-5 italic text-blue-600 bg-[#FE58F1]">
 					Will we get our garden?
@@ -95,8 +114,16 @@ export default function Home() {
 
 				<button
 					onClick={() => setIsClickToFindOutClicked(!isClicktoFindOutClicked)}
-					className=" cursor-grab bg-gray-300 text-xl text-[#FE58F1] border-2 border-blue-600 lg:text-4xl px-2 py-5">
-					{isClicktoFindOutClicked ? "Yes!" : "Click to Find out"}
+					className="cursor-grab  text-xl  lg:text-4xl ">
+					<Image
+						src={`/imgs/${isClicktoFindOutClicked ? "yesButton.png" : "clickToFindOutButton.png"}`}
+						alt="Click Button"
+						className="w-full h-full object-contain"
+						draggable={false}
+						width={100}
+						height={100}
+						quality={100}
+					/>
 				</button>
 			</div>
 			<div className="absolute right-[12%] w-1/12 min-h-28 top-[52.5%] z-10 flex flex-col  space-y-4 items-center justify-center m-2 ">
@@ -168,11 +195,16 @@ export default function Home() {
 			</div>
 			<div className="absolute  w-1/2  left-[23%] bottom-[2.2%] min-h-72 z-10   space-y-4 items-center justify-center m-10  grid grid-rows-9">
 				<button
-					className="bg-[#FE58F1] hover:bg-[#613c66] p-2 rounded-xl row-span-2 w-2/3 self-center justify-self-center"
-					onClick={generateLoveLetter}>
-					Generate a love letter
-				</button>
-				<p className="w-full m-2 row-span-7">{loveLetter}</p>
+					onClick={generateLoveLetter}
+					className="row-span-3  w-full aspect-[2/1] self-center justify-self-center rounded-xl bg-contain bg-no-repeat bg-center hover:cursor-pointer"
+					style={{
+						backgroundImage: "url(/imgs/generateLoveLetter.png)",
+						height: "130px",
+					}}
+					aria-label="Generate Love Letter"
+				/>
+
+				<p className="w-full m-2 row-span-6">{loveLetter}</p>
 			</div>
 		</div>
 	);
