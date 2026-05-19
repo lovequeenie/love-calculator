@@ -4,6 +4,7 @@ import { ImageDialog } from "./components/ImageDialog";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { motion } from "motion/react";
 import {
 	Dialog,
 	DialogContent,
@@ -11,6 +12,7 @@ import {
 	DialogHeader,
 	DialogTitle,
 } from "@/components/ui/dialog";
+import Link from "next/link";
 type DialogId =
 	| "home"
 	| "raddich"
@@ -50,12 +52,24 @@ export default function Home() {
 		"Beloved, you are my heart's greatest joy. Your love is the light that guides me through the darkest days. I cherish you beyond words and promise to always stand by your side. No matter what, you will always have my love. Eternally yours.",
 	];
 	useEffect(() => {
-		fetchNotes()
-			.then((data) => {
+		const loadNotes = async () => {
+			try {
+				const data = await fetchNotes();
 				setNotes(data.notes);
-			})
-			.catch(console.error);
-	});
+			} catch (err) {
+				console.error(err);
+			}
+		};
+
+		// initial fetch
+		loadNotes();
+
+		// fetch every 20 seconds
+		const interval = setInterval(loadNotes, 20000);
+
+		// cleanup
+		return () => clearInterval(interval);
+	}, []);
 	const fetchNotes = async (): Promise<{ notes: Note[] }> => {
 		const res = await fetch(`/api/notes`, {
 			cache: "no-store",
@@ -341,6 +355,36 @@ export default function Home() {
 						}}
 						aria-label="create crosshair"
 					/>
+				</div>
+			</div>
+			<div className="relative w-full aspect-[1850/1080] bg-white rounded-none   space-y-4 items-center justify-center  grid grid-rows-9">
+				<Image
+					className="object-contain  rounded-none"
+					src={"/imgs/liveLoveCalculate5.webp"}
+					fill
+					alt="image 1"
+				/>
+				<div className="absolute left-[20%] w-7/12 bottom-[5%] h-[30%] z-10   space-y-4 items-center justify-center grid grid-rows-12">
+					<Link
+						href="/generate"
+						className="row-span-3 col-span-2 h-full w-full aspect-[128/192] scale-150
+						self-center justify-self-center rounded-xl bg-contain bg-no-repeat
+						bg-center hover:cursor-pointer    bg-radial-[at_50%]  from-[#A9E835]/60 to-70%  drop-shadow-[0_0_50px_rgba(16,185,129,0.8)]">
+						<motion.img
+							alt="Go to generate page"
+							src="/imgs/gardenDoor.gif"
+							className="h-full w-auto object-contain   overflow-hidden"
+							animate={{
+								scale: [1, 1.08, 1],
+								opacity: [0.8, 1, 0.8],
+							}}
+							transition={{
+								duration: 3,
+								repeat: Infinity,
+								ease: "easeInOut",
+							}}
+						/>
+					</Link>
 				</div>
 			</div>
 			<Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
