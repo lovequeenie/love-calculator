@@ -188,10 +188,10 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className=" relative w-full aspect-[3808/8959]  bg-white items-center   overflow-hidden">
+			<div className=" relative w-full aspect-[1600/3764]  bg-white items-center   overflow-hidden">
 				<Image
 					className="object-contain rounded-none"
-					src={"/imgs/liveloveCalculate2.webp"}
+					src={"/imgs/liveloveCalculate2_smaller.webp"}
 					unoptimized
 					fill
 					alt="image 2"
@@ -320,10 +320,10 @@ export default function Home() {
 					<p className="w-full  row-span-6 sm:text-5xl">{loveLetter}</p>
 				</div>
 			</div>
-			<div className="relative w-full aspect-[3840/9000] bg-white rounded-none   space-y-4 items-center justify-center  grid grid-rows-9">
+			<div className="relative w-full aspect-[1600/3750] bg-white rounded-none   space-y-4 items-center justify-center  grid grid-rows-9">
 				<Image
 					className="object-contain  rounded-none"
-					src={"/imgs/liveloveCalculate4.webp"}
+					src={"/imgs/liveloveCalculate4_smaller.webp"}
 					unoptimized
 					fill
 					alt="image 1"
