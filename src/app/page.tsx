@@ -135,6 +135,7 @@ export default function Home() {
 				<Image
 					className="object-contain  rounded-none"
 					src={"/imgs/liveloveCalculate1.webp"}
+					unoptimized
 					fill
 					alt="image 1"
 				/>
@@ -191,6 +192,7 @@ export default function Home() {
 				<Image
 					className="object-contain rounded-none"
 					src={"/imgs/liveloveCalculate2.webp"}
+					unoptimized
 					fill
 					alt="image 2"
 				/>
@@ -301,6 +303,7 @@ export default function Home() {
 				<Image
 					className="object-contain  rounded-none"
 					src={"/imgs/liveloveCalculate3.webp"}
+					unoptimized
 					fill
 					alt="image 1"
 				/>
@@ -321,6 +324,7 @@ export default function Home() {
 				<Image
 					className="object-contain  rounded-none"
 					src={"/imgs/liveloveCalculate4.webp"}
+					unoptimized
 					fill
 					alt="image 1"
 				/>
@@ -362,6 +366,7 @@ export default function Home() {
 					className="object-contain  rounded-none"
 					src={"/imgs/liveLoveCalculate5.webp"}
 					fill
+					unoptimized
 					alt="image 1"
 				/>
 				<div className="absolute left-[20%] w-7/12 bottom-[5%] h-[30%] z-10   space-y-4 items-center justify-center grid grid-rows-12">
