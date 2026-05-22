@@ -132,9 +132,10 @@ export default function Home() {
 			className=" flex flex-col min-h-screen
  overflow-x-hidden z-0 love-parade-text">
 			<div className=" relative w-full aspect-[3812/4321] bg-white overflow-hidden rounded-none">
-				<img
+				<Image
 					className=" absolute object-contain  rounded-none"
-					src={"/imgs/liveloveCalculate1.webp"}
+					fill
+					src={"/imgs/liveLoveCalculate1.webp"}
 					alt="image 1"
 				/>
 				<div className=" absolute bottom-[10.5%] max-h-[3%] left-[36.7%] md:max-h-[16%] md:left-[36.7%]  md:bottom-[10.5%] xl:left-1/3 xl:bottom-[8%] sm:w-3/12 xl:w-1/3  grid grid-rows-12 space-y-4 overflow-hidden">
@@ -187,9 +188,10 @@ export default function Home() {
 			</div>
 
 			<div className=" relative w-full aspect-[1600/3764]  bg-white items-center   overflow-hidden">
-				<img
+				<Image
 					className="absolute object-contain rounded-none"
-					src={"/imgs/liveloveCalculate2_smaller.webp"}
+					src={"/imgs/liveLoveCalculate2Optimized.webp"}
+					fill
 					alt="image 2"
 				/>
 				<div className=" absolute  right-[4%] w-2/12 top-[1.5%] h-10 z-10 flex flex-col  space-y-4 items-center justify-center m-10 ">
@@ -296,9 +298,10 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="relative w-full aspect-[3804/2102] bg-white   space-y-4 items-center justify-center   grid grid-rows-9">
-				<img
+				<Image
 					className="absolute object-contain  rounded-none"
-					src={"/imgs/liveloveCalculate3.webp"}
+					src={"/imgs/liveLoveCalculate3.webp"}
+					fill
 					alt="image 1"
 				/>
 				<div className="absolute left-[28%] w-6/12 top-[32%] h-[30%] z-10   space-y-4 items-center justify-center    grid grid-rows-9">
@@ -315,9 +318,10 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="relative w-full aspect-[1600/3750] bg-white rounded-none   space-y-4 items-center justify-center  grid grid-rows-9">
-				<img
+				<Image
 					className=" absolute object-contain  rounded-none"
-					src={"/imgs/liveloveCalculate4_smaller.webp"}
+					src={"/imgs/liveLoveCalculate4Optimized.webp"}
+					fill
 					alt="image 1"
 				/>
 				{isPlacing && (
@@ -354,8 +358,9 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="relative w-full aspect-[1850/1080] bg-white rounded-none   space-y-4 items-center justify-center  grid grid-rows-9">
-				<img
+				<Image
 					className=" absolute object-contain  rounded-none"
+					fill
 					src={"/imgs/liveLoveCalculate5.webp"}
 					alt="image 1"
 				/>
