@@ -5,7 +5,6 @@ import {
 	DialogTitle,
 	DialogClose,
 } from "./motion-primitives/dialog";
-import Image from "next/image";
 
 interface ImageDialogProps {
 	imageUrl: string;
@@ -29,23 +28,18 @@ export function ImageDialog({
 				aria-label="Open information dialog"></button>
 
 			<Dialog open={isOpen} onOpenChange={onOpenChange}>
-				<DialogContent className="w-full sm:max-w-8xl sm:min-w-4xl sm:min-h-full bg-white p-6 dark:bg-zinc-900">
+				<DialogContent className="max-w-[95vw] max-h-[95vh] flex items-center justify-center">
 					<DialogHeader>
 						<DialogTitle className="text-zinc-900 dark:text-white">
 							{title}{" "}
 						</DialogTitle>
 					</DialogHeader>
 
-					<div className="relative mt-6 w-full aspect-video">
-						<Image
+					<div className="relative mt-6  w-auto h-[90vh] aspect-[2480/3508]">
+						<img
 							src={`/imgs/${imageUrl}`}
-							height={100}
-							width={100}
-							loading="lazy"
-							alt="Information image"
-							quality={100}
-							className="object-cover min-h-full min-w-full"
-							sizes="(min-width:1200px) 100vw, 100vw"
+							alt={title}
+							className="w-full h-full object-contain"
 						/>
 					</div>
 

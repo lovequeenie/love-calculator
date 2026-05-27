@@ -133,20 +133,29 @@ export default function Home() {
  overflow-x-hidden z-0 love-parade-text">
 			<div className=" relative w-full aspect-[3812/4321] bg-white overflow-hidden rounded-none">
 				<Image
-					className=" absolute object-contain  rounded-none"
+					className="object-contain  rounded-none"
 					fill
 					src={"/imgs/liveLoveCalculate1.webp"}
 					alt="image 1"
 				/>
-				<div className=" absolute bottom-[10.5%] max-h-[3%] left-[36.7%] md:max-h-[16%] md:left-[36.7%]  md:bottom-[10.5%] xl:left-1/3 xl:bottom-[8%] sm:w-3/12 xl:w-1/3  grid grid-rows-12 space-y-4 overflow-hidden">
-					<h1 className="text-xl md:text-5xl font-bold justify-self-center whitespace-nowrap  row-span-2 text-[#6658fe]">
+				<div
+					className=" absolute top-[74%]  left-[36.7%] w-[25%] 		-translate-x-[2%]
+			sm:scale-100 space-y-4 overflow-hidden flex flex-col items-center 	gap-[0.6vw]">
+					<h1 className="text-[clamp(0.8rem,2.2vw,3rem)] font-bold justify-self-center whitespace-nowrap   text-[#6658fe]">
 						Love Calculator
 					</h1>
 					<input
 						type="text"
 						id="name1"
 						placeholder="Name 1"
-						className="text-lg w-full xl:text-3xl  mb-4 py-2 px-4 border-2 rounded-lg row-span-2 text-[#6658fe]"
+						className="w-full
+				rounded-lg
+				border-2
+				px-[4%]
+				py-[2%]
+
+				text-[#6658fe]
+				text-[clamp(0.45rem,0.9vw,1rem)]"
 						value={name1}
 						onChange={(e) => setName1((e.target as HTMLInputElement).value)}
 					/>
@@ -154,35 +163,43 @@ export default function Home() {
 						type="text"
 						id="name2"
 						placeholder="Name 2"
-						className="text-lg  w-full xl:text-3xl  mt-4 py-2 px-4 border-2 rounded-lg row-span-2 text-[#6658fe]"
+						className="w-full
+				rounded-lg
+				border-2
+				px-[4%]
+				py-[2%]
+
+				text-[#6658fe]
+				text-[clamp(0.45rem,0.9vw,1rem)]"
 						value={name2}
 						onChange={(e) => setName2((e.target as HTMLInputElement).value)}
+					/>{" "}
+					<button
+						className="w-[35%] cursor-pointer rounded-lg bg-contain bg-no-repeat bg-center aspect-[2/1] self-center "
+						style={{
+							backgroundImage: "url(imgs/calculatebutton.png)",
+						}}
+						onClick={ShowResult}
 					/>
-					<div className="row-span-4 flex flex-col h-full text-[#6658fe]">
-						{" "}
-						<button
-							className=" h-[60%] w-full md:text-xl md:p-1  cursor-pointer rounded-lg bg-contain bg-no-repeat bg-center aspect-[1/1] self-center "
-							style={{
-								backgroundImage: "url(imgs/calculatebutton.png)",
-								height: "150px",
-							}}
-							onClick={ShowResult}
-						/>
-						<div className="flex justify-center xl:my-4 h-[40%]">
-							<p className="flex w-full justify-center sm:text-xl md:text-5xl xl:text-5xl ">
-								{showResult && (
-									<>
-										<span className="break-all">{name1}</span>&nbsp;
-										<img
-											src="/imgs/heart.gif"
-											alt="love-gif"
-											className="h-2/12 lg:h-20"
-										/>
-										&nbsp;<span className="break-all">{name2} 100% love!</span>
-									</>
-								)}
-							</p>
-						</div>
+					<div className="flex items-center justify-center text-center min-h-[3rem]">
+						<p
+							className="flex whitespace-nowrap  items-center justify-center
+					text-[#6658fe] text-[clamp(0.6rem,1.4vw,1.8rem)]
+					 ">
+							{showResult ? (
+								<>
+									<span>{name1}</span>&nbsp;
+									<img
+										src="/imgs/heart.gif"
+										alt="love-gif"
+										className="mx-1 w-[12%]"
+									/>
+									<span>{name2} 100% love!</span>
+								</>
+							) : (
+								<span className="opacity-0">placeholder placeholder</span>
+							)}
+						</p>
 					</div>
 				</div>
 			</div>
@@ -219,15 +236,13 @@ export default function Home() {
 
 					<button
 						onClick={() => setIsClickToFindOutClicked(!isClicktoFindOutClicked)}
-						className="cursor-grab w-1/3 text-xl  lg:text-4xl py-4 min-h-full">
+						className="cursor-grab w-[40%] relative aspect-[2334/1360]">
 						<Image
 							src={`/imgs/${isClicktoFindOutClicked ? "yesbutton.png" : "clicktofindoutbutton.png"}`}
 							alt="Click Button"
-							className="w-full h-full object-contain"
+							className="object-contain scale-[1.5]"
 							draggable={false}
-							width={100}
-							height={100}
-							quality={100}
+							fill
 						/>
 					</button>
 				</div>
@@ -304,7 +319,7 @@ export default function Home() {
 					fill
 					alt="image 1"
 				/>
-				<div className="absolute left-[28%] w-6/12 top-[32%] h-[30%] z-10   space-y-4 items-center justify-center    grid grid-rows-9">
+				<div className="absolute left-[25%] w-6/12 top-[38%] h-[30%] z-10   space-y-4 items-center justify-center    grid grid-rows-9">
 					<button
 						onClick={generateLoveLetter}
 						className="row-span-3   h-full w-full aspect-[2/1] self-center justify-self-center rounded-xl bg-contain bg-no-repeat bg-center hover:cursor-pointer"
@@ -369,13 +384,17 @@ export default function Home() {
 						href="/generate"
 						className="row-span-3 col-span-2 h-full w-full aspect-[128/192] scale-150
 						self-center justify-self-center rounded-xl bg-contain bg-no-repeat
-						bg-center hover:cursor-pointer    bg-radial-[at_50%]  from-[#A9E835]/60 to-70%  drop-shadow-[0_0_50px_rgba(16,185,129,0.8)]">
+						bg-center hover:cursor-pointer    bg-radial-[circle_at_center]
+						from-[#b6ff3b]/90
+						via-[#6cff3b]/40
+						to-transparent
+						to-70% drop-shadow-[0_0_50px_rgba(16,185,129,0.8)] shadow-[0_0_120px_rgba(120,255,80,0.6)]">
 						<motion.img
 							alt="Go to generate page"
 							src="/imgs/gardenDoor.gif"
 							className="h-full w-auto object-contain   overflow-hidden"
 							animate={{
-								scale: [1, 1.08, 1],
+								scale: [1, 1.15, 1],
 								opacity: [0.8, 1, 0.8],
 							}}
 							transition={{
